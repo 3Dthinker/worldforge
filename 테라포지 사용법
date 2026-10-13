@@ -1,0 +1,18 @@
+*준비 프로그램 : 언리얼 엔진 5.7.4 , Python 3.13.16 64비트, Visual Studio 2022 17.14(필수) , 선택 : API(Open-Meteo, OpenWeather) , 디테일(OBJ,FBX,GLB 지원 3D모델링 프로그램), 스캐너(예시로는 Trimble의 Scan Essentials을 사용하여 모델링을 구현해 사용했으나 3d스캔 메쉬로도 사용이 가능함을 확인함)
+
+*Visual Studio Installer 수정사항에서 다음 옵션 체크
+- C++를 사용한 데스크톱 개발
+- C++를 사용한 게임 개발
+- MSVC v143, 버전 14.44.35214
+- Windows SDK 10.0.22621.0 이상
+
+0. 실행
+r25 ZIP을 C:\TerraForge처럼 짧은 경로에 전체 압축 해제
+Check-Environment.cmd 실행
+Unreal을 닫고 Build-Unreal.cmd 실행
+Build succeeded 확인 후 Start-TerraForge.cmd 실행
+
+1. 연결 / 프로젝트 정보
+기존의 Unreal프로젝트를 연결하거나 새로이 Unreal을 열어 연동
+
+2. 자료 목록 - 선택 내보내기 / 삭제
