@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+diagnostics/
+*.zip
+*.sqlite3*
+.env
+**/Saved/
+**/Intermediate/
+**/Binaries/
+**/DerivedDataCache/
+.vs/
+*.sln

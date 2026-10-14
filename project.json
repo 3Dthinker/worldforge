@@ -1,0 +1,96 @@
+{
+  "project_id": "terraforge-first-prototype",
+  "name": "TerraForge",
+  "version": "0.1.0-dev",
+  "protocol": "terraforge/1",
+  "release_status": "windows_compile_passed_runtime_validation_pending",
+  "target": {
+    "os": "Windows 11",
+    "cpu": "Intel i5-14600KF",
+    "gpu": "RTX 4060 Ti",
+    "ram_gb": 32,
+    "unreal": "5.7.4",
+    "blender": "5.2",
+    "visual_studio": "desktop installation unknown; laptop compile verified"
+  },
+  "ai": {
+    "default": "off",
+    "calls_during_normal_use": 0,
+    "optional_provider": "OpenAI Responses API",
+    "model": "user supplied",
+    "live_api_test": "not_run"
+  },
+  "validation": {
+    "python_core": "57 tests passed (PyMuPDF 1.26.6)",
+    "windows_gui": "r9 PDF UI pending Windows validation",
+    "powershell_scripts": "revision 3 and r5 build executed on user laptop",
+    "unreal_compile": "r5 UE5.7.4 exit 0 confirmed by user log 2026-10-08; r8 Unreal source unchanged",
+    "unreal_physics": "not_run",
+    "python_version": "3.12.14",
+    "weather_api": "Open-Meteo live fetch and parser succeeded 2026-10-08"
+  },
+  "next_user_action": "Apply r9, install PDF module in the PDF window, load page and calibrate/select wall candidates",
+  "remaining_scope": [
+    "UE contact direction and piece dynamics acceptance",
+    "weather/import visual acceptance",
+    "GUI Windows interaction checks",
+    "optional selected provider live test",
+    "final packaging after acceptance"
+  ],
+  "later_adapters_not_implemented": [
+    "VWorld acquisition",
+    "photo and LiDAR reconstruction",
+    "Meshy API",
+    "3DM/SKP native import",
+    "arbitrary mesh fracture",
+    "Geometry Collection graph",
+    "FEM solver integration",
+    "rain/snow hydrology",
+    "general PDF drawing recognition"
+  ],
+  "supported_machines": [
+    {
+      "os": "Windows 11",
+      "cpu": "Intel i5-14600KF",
+      "gpu": "RTX 4060 Ti",
+      "ram_gb": 32,
+      "unreal": "5.7.4",
+      "blender": "5.2",
+      "visual_studio": "not installed at user report"
+    },
+    {
+      "os": "Windows 11",
+      "cpu": "Intel i7-13620H",
+      "gpu": "RTX 4050 Laptop",
+      "ram_gb": 32,
+      "evidence": "user-supplied 2026-10-08 environment diagnostic",
+      "windows_sdk_versions": [
+        "10.0.26100.0"
+      ],
+      "unreal_detected": true,
+      "cpp_toolchain_detected": true,
+      "python_tk_detected": false,
+      "visual_studio": "2026 Insiders 18.11",
+      "msvc": "14.51.36231"
+    }
+  ],
+  "environment_detector_revision": 3,
+  "features_r6": [
+    "Pretendard private fonts",
+    "rounded native UI",
+    "manual weather scenarios",
+    "opt-in Open-Meteo weather query",
+    "preserved scan and drawing input categories"
+  ],
+  "features_r8": [
+    "explicit drawing recipe to OBJ",
+    "provisional dimension gate",
+    "partial A-305 core wall review example"
+  ],
+  "features_r9": [
+    "local vector PDF wall candidate recognition",
+    "page / ROI / metric calibration UI",
+    "candidate selection and internal 3D review",
+    "JSON provenance and OBJ export"
+  ]
+}
